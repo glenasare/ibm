@@ -28,7 +28,7 @@ jobs:
           aws-region: us-west-2
 
       - name: Deploy to S3 bucket
-        run: aws s3 sync build/ s3://portfolio-website2022 --delete
+        run: aws s3 sync build/ s3://ibmchurch --delete
       - name: Invalidate CloudFront cache
         uses: aws-actions/cloudfront-create-invalidation@v1
         with:
