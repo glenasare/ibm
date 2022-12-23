@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React from 'react'
 import { MiniNavbar, Text } from './miniNav.style'
 import ScrollText from './ScrollText';
 

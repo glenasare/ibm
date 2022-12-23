@@ -1,16 +1,11 @@
 import React, { useState } from "react";
-import MiniNav from "./MiniNav";
+
 import { NavbarLi, NavbarMain, NavbarUl, NavLogo } from "./Navbar.style";
-import Container from "@mui/material/Container";
+
 import { BsSearch } from "react-icons/bs";
 
-type navItems = {
-  name: string;
-  id: string;
-  style: any;
-  image: any;
-};
 function Navbar() {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   let [navbarItems, setNavbarItems] = useState([
     {
       name: "Home",
