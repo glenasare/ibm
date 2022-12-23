@@ -1,0 +1,28 @@
+name: Deploy to AWS
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install dependencies
+      run: |
+        npm install
+    - name: Build website
+      run: |
+        npm run build
+    - name: Deploy to S3
+      uses: aws-actions/s3-upload-action@v2
+      with:
+        bucket: ibmchurch
+        region: us-west-2
+        local_dir: build
+        acl: public-read
+    - name: Invalidate CloudFront cache
+      uses: aws-actions/cloudfront-invalidate-action@v1
+      with:
+        distribution-id: E3DMQ61K51OTGK
+        paths: '/*'
