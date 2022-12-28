@@ -102,7 +102,9 @@ function Navbar() {
             
           </NavbarUl>
         ))}
-        <HamburgerMenu colorChange={colorChange}/>
+
+<HamburgerMenu colorChange={colorChange}/>
+        
         
       </NavbarMain>
     </>

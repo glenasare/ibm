@@ -57,10 +57,10 @@ export const MenuButton = styled.span <NavbarMain>`
   } 
   @media (min-width: 300px) and (max-width: 1000px) {
     display: flex;
-    position:fixed;
     right:5%;
     padding-top: ${props => (props.colorChange ? '3%' : "3%")};
-    width:200px;
+    width:100%;
+    padding-right:0px;
   }
 
 `
