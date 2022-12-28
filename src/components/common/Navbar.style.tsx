@@ -5,6 +5,7 @@ interface NavbarMain {
   colorChange: boolean;
 }
 
+// eslint-disable-next-line @typescript-eslint/no-redeclare
 export const NavbarMain = styled.div<NavbarMain>`
   height: ${props => (props.colorChange ? '100px' : "90px")};
   background-color: ${props => (props.colorChange ? '#fff' : 'transparent')};

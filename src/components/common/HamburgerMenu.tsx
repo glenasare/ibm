@@ -1,13 +1,12 @@
 
-import { MenuButton, NavbarLi } from "./Navbar.style";
+import { MenuButton} from "./Navbar.style";
 import Hamburger from "hamburger-react";
-import {AiOutlineMenu} from 'react-icons/ai'
+
 import {
   Drawer,
   ListItem,
   ListItemIcon,
   ListItemText,
-  Button,
 } from "@material-ui/core";
 import {
   CheckBoxOutlineBlankOutlined,

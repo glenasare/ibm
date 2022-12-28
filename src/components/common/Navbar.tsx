@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
-import { MenuButton, NavbarLi, NavbarMain, NavbarUl, NavLogo } from "./Navbar.style";
+import {NavbarLi, NavbarMain, NavbarUl, NavLogo } from "./Navbar.style";
 
 import { BsSearch } from "react-icons/bs";
-import Hamburger from 'hamburger-react'
+
 import logo from './images/cropped-ibm-Copy (1).png'
 import HamburgerMenu from "./HamburgerMenu";
 
