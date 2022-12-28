@@ -86,7 +86,7 @@ function Navbar() {
           }}
         >
           {" "}
-          <NavLogo colorChange={colorChange}><img src={logo} alt=""/></NavLogo>
+          <NavLogo colorChange={colorChange}><img style={{width:'200px'}} src={logo} alt=""/></NavLogo>
         </h1>
         {navbarItems.map((items: any, index) => (
           <NavbarUl key={index} colorChange={colorChange}>

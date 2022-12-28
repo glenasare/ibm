@@ -60,6 +60,7 @@ export const MenuButton = styled.span <NavbarMain>`
     position:fixed;
     right:5%;
     padding-top: ${props => (props.colorChange ? '3%' : "3%")};
+    width:200px;
   }
 
 `
