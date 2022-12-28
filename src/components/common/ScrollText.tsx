@@ -13,9 +13,10 @@ function ScrollText(props:any) {
       setKey(key + 1);
     },
   });
+  
  
   return (
-    <div key={key}>
+    <div key={key} >
       <animated.div style={scrolling}>{props.text} <a style={{color:'#EE9A14'}} href={props.text} target="_blank" rel="noreferrer">Click Here</a> </animated.div>
     </div>
   );
