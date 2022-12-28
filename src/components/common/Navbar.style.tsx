@@ -39,7 +39,7 @@ export const NavbarUl = styled.ul<NavbarMain>`
   } */
 
   /* Styles for viewports between 300px and 500px */
-  @media (min-width: 300px) and (max-width: 980px) {
+  @media (min-width: 300px) and (max-width: 1000px) {
     display: none;
   }
 
@@ -54,7 +54,7 @@ export const MenuButton = styled.span <NavbarMain>`
    @media (min-width: 500px) {
     display: none;
   } 
-  @media (min-width: 300px) and (max-width: 980px) {
+  @media (min-width: 300px) and (max-width: 1000px) {
     display: flex;
     position:fixed;
     right:5%;
