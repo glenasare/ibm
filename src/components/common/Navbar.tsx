@@ -73,10 +73,7 @@ function Navbar() {
     setActiveIndex(index);
   }
 
-  const handleOpen = () => {
-    setDrawer(!openDrawer)
-    console.log(openDrawer)
-  }
+
  
   return (
     <>
