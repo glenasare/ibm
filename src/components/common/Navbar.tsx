@@ -9,7 +9,7 @@ import HamburgerMenu from "./HamburgerMenu";
 
 function Navbar() {
 
-  const [openDrawer,setDrawer] = useState(false)
+  
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   let [navbarItems, setNavbarItems] = useState([
     {
