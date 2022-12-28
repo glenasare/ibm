@@ -1,54 +1,69 @@
 import React, { useState } from "react";
 
-import { NavbarLi, NavbarMain, NavbarUl, NavLogo } from "./Navbar.style";
+import { MenuButton, NavbarLi, NavbarMain, NavbarUl, NavLogo } from "./Navbar.style";
 
 import { BsSearch } from "react-icons/bs";
+import Hamburger from 'hamburger-react'
+import logo from './images/cropped-ibm-Copy (1).png'
+import HamburgerMenu from "./HamburgerMenu";
 
 function Navbar() {
+
+  const [openDrawer,setDrawer] = useState(false)
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   let [navbarItems, setNavbarItems] = useState([
     {
       name: "Home",
-      id: "/",
+      to: "/",
       active: true,
       
     },
     {
       name: "About us",
-      id: "about",
+      to: "about",
       active: false,
       
     },
     {
       name: "Events",
-      id: "events",
+      to: "events",
       active: false,
       
     },
     {
       name: "Blog",
-      id: "blog",
+      to: "blog",
       active: false,
      
     },
     {
       name: "Gallery",
-      id: "gallery",
+      to: "gallery",
       active: false,
       
     },
     {
       name: "Contact",
-      id: "contact",
+      to: "contact",
       active: false,
       
     },
     {
       image: <BsSearch />,
-      id: "image",
+      to: "image",
       style: {},
     },
   ]);
+  const [colorChange, setColorchange] = useState(false);
+  const changeNavbarColor = () =>{
+     if(window.scrollY >= 80){
+       setColorchange(true);
+     }
+     else{
+       setColorchange(false);
+     }
+  };
+  window.addEventListener('scroll', changeNavbarColor);
 
 
 
@@ -57,10 +72,15 @@ function Navbar() {
   const handleClick = (index:any) => {
     setActiveIndex(index);
   }
-  console.log(activeIndex)
+
+  const handleOpen = () => {
+    setDrawer(!openDrawer)
+    console.log(openDrawer)
+  }
+ 
   return (
     <>
-      <NavbarMain>
+      <NavbarMain colorChange={colorChange}>
         <h1
           style={{
             flexGrow: "1",
@@ -69,20 +89,24 @@ function Navbar() {
           }}
         >
           {" "}
-          <NavLogo>I.B.M</NavLogo>
+          <NavLogo colorChange={colorChange}><img src={logo} alt=""/></NavLogo>
         </h1>
         {navbarItems.map((items: any, index) => (
-          <NavbarUl key={index}>
-            <NavbarLi
-              id={items.id}
+          <NavbarUl key={index} colorChange={colorChange}>
+            <NavbarLi 
+              colorChange={colorChange}
+              to={items.to}
               className={index === activeIndex ? 'active' : ''}
               onClick={() => handleClick(index)}
             >
               {items.name}
             </NavbarLi>
             <li>{items.image}</li>
+            
           </NavbarUl>
         ))}
+        <HamburgerMenu colorChange={colorChange}/>
+        
       </NavbarMain>
     </>
   );

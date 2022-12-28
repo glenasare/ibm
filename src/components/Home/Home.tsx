@@ -5,16 +5,18 @@ import { HomeStyle } from "./Home.style";
 import image1 from '../common/images/pexels-luis-quintero-2014775.jpg'
 import image2 from '../common/images/pexels-luis-quintero-2294873.jpg'
 import image3 from '../common/images/pexels-adrijana-1575859.jpg'
+import "./Home.css"
 
 function Home() {
   return (
     <HomeStyle>
-      <Carousel>
-        <Carousel.Item interval={2000}>
+      <Carousel >
+        <Carousel.Item interval={2000} >
           <img
             className="d-block w-100"
             src={image1}
             alt="First slide"
+            style={{height:'50vh'}}
           />
           <Carousel.Caption style={{color:"rgb(255, 255, 255)"}}>
             <h2>What Did Jesus Say</h2>
@@ -27,6 +29,7 @@ function Home() {
             className="d-block w-100"
             src={image2}
             alt="Second slide"
+            style={{height:'50vh'}}
           />
 
           <Carousel.Caption style={{color:"#e9e5f5"}}>
@@ -40,6 +43,7 @@ function Home() {
             className="d-block w-100"
             src={image3}
             alt="Third slide"
+            style={{height:'50vh'}}
           />
           <Carousel.Caption style={{color:"#e9e5f5"}}>
             <h2>Third slide label</h2>
