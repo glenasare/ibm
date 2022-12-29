@@ -33,7 +33,7 @@ export const MainAboutText = styled.div`
   color: #000;
   @media (min-width: 300px) and (max-width: 1000px) {
     top: 130%;
-    width:500px;
+    width:100%;
   }
 `;
 export const HeaderText = styled.p`
@@ -43,4 +43,5 @@ font-size:30px;
 export const HeaderText2 = styled.h1`
 font-family: 'Montserrat', sans-serif;
 font-weight:bolder;
+
 `
