@@ -1,0 +1,8 @@
+.card-media {
+    cursor: pointer;
+    filter: brightness(50%) grayscale(100%);
+}
+.card-media:hover{
+    filter: grayscale(0%);
+    background-color: blue;
+}

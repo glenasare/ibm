@@ -10,7 +10,18 @@ import {
 } from "./About.style";
 import image from "../common/images/pexels-abdel-rahman-abu-baker-2537395.jpg";
 import YouthComponent from "./youth";
+import { useRecoilState } from "recoil";
+import { handleClickState } from "../common/globalStateManager";
 function About() {
+  const [state, setState] = useRecoilState(handleClickState);
+
+  
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const handleClick = () => {
+    setState(!state);
+  }
+  console.log(state)
+
   return (
     <div style={{ height: "100vh" }}>
       <ImageContainer>
@@ -42,13 +53,9 @@ function About() {
             are often inserted randomly to mimic the typographic appearence of
             European languages, as are digraphs not to be found in the original
           </p>
-          
         </MainAboutText>
-        
-        
       </MainAboutContainter>
-      <YouthComponent/>
-      
+      <YouthComponent />
     </div>
   );
 }

@@ -31,7 +31,8 @@ export const NavbarUl = styled.ul<NavbarMain>`
   justify-content: space-around;
   display: flex;
   padding-right: 20px;
-  padding-top: ${props => (props.colorChange ? '0%' : "3%")};
+  padding-top: ${props => (props.colorChange ? '0%' : "0%")};
+  
 
 
     /* Styles for viewports wider than 500px
@@ -40,7 +41,7 @@ export const NavbarUl = styled.ul<NavbarMain>`
   } */
 
   /* Styles for viewports between 300px and 500px */
-  @media (min-width: 300px) and (max-width: 1000px) {
+  @media (min-width: 300px) and (max-width: 1280px) {
     display: none;
   }
 
@@ -63,7 +64,7 @@ export const NavbarSocialUl = styled.ul<NavbarMain>`
   } */
 
   /* Styles for viewports between 300px and 500px */
-  @media (min-width: 300px) and (max-width: 1000px) {
+  @media (min-width: 300px) and (max-width: 1280px) {
     display: none;
   }
 
@@ -79,7 +80,7 @@ export const MenuButton = styled.span <NavbarMain>`
    @media (min-width: 500px) {
     display: none;
   } 
-  @media (min-width: 300px) and (max-width: 1000px) {
+  @media (min-width: 300px) and (max-width: 1280px) {
     display: flex;
     right:5%;
     padding-top: ${props => (props.colorChange ? '3%' : "3%")};
@@ -96,6 +97,7 @@ export const NavbarLi = styled(Link).attrs(props => ({
   text-transform:uppercase;
   text-decoration:none;
   color: ${props => (props.colorChange ? '#fff' : "#fff")};
+  font-family: 'Inter', sans-serif;
   
   &:hover {
     color: #EE9A14;
