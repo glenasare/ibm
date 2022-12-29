@@ -9,6 +9,7 @@ import {
   MainAboutText,
 } from "./About.style";
 import image from "../common/images/pexels-abdel-rahman-abu-baker-2537395.jpg";
+import YouthComponent from "./youth";
 function About() {
   return (
     <div style={{ height: "100vh" }}>
@@ -41,8 +42,13 @@ function About() {
             are often inserted randomly to mimic the typographic appearence of
             European languages, as are digraphs not to be found in the original
           </p>
+          
         </MainAboutText>
+        
+        
       </MainAboutContainter>
+      <YouthComponent/>
+      
     </div>
   );
 }
