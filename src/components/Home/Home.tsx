@@ -2,9 +2,7 @@ import { Button } from "@mui/material";
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import { HomeStyle } from "./Home.style";
-import image1 from "../common/images/pexels-luis-quintero-2014775.jpg";
-import image2 from "../common/images/pexels-nappy-935944.jpg";
-import image3 from "../common/images/30698056_487149951681758_3803542334902108160_n.jpg";
+
 import "./Home.css";
 import { ImageData } from "./imageData";
 

@@ -1,5 +1,4 @@
 import React from "react";
-import { Container } from "@mui/material";
 import { BackgroundImage, HeaderText, HeaderText2, ImageContainer, ImageText, MainAboutContainter, MainAboutText } from "./About.style";
 import image from "../common/images/pexels-abdel-rahman-abu-baker-2537395.jpg";
 function About() {

@@ -48,6 +48,7 @@ function Navbar() {
       style: {},
     },
   ]);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   let [navbarSocials, setNavbarSocials] = useState([
     {
       icon: <FaFacebookF />,
