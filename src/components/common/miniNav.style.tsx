@@ -13,10 +13,10 @@ export const Text = styled.h6`
   justify-content: center;
   text-align: center;
   display: flex;
-  color: #b8b6b6;
+  color: #ee0505;
   width:100%;
   padding-top:5px;
-  font-family: 'Rubik 80s Fade', cursive;
+  font-family: 'Bebas Neue', cursive;
   
   
 `;
