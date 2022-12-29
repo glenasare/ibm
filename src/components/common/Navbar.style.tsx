@@ -8,18 +8,18 @@ interface NavbarMain {
 // eslint-disable-next-line @typescript-eslint/no-redeclare
 export const NavbarMain = styled.div<NavbarMain>`
   height: ${props => (props.colorChange ? '100px' : "90px")};
-  background-color: ${props => (props.colorChange ? '#fff' : 'transparent')};
+  background-color: ${props => (props.colorChange ? '#000' : 'transparent')};
   width: 100%;
   justify-content: center;
   align-content: center;
   display: flex;
-  color: ${props => (props.colorChange ? '#000' : "#fff")};
+  color: ${props => (props.colorChange ? '#fff' : "#fff")};
   top: ${props => (props.colorChange ? '0%' : "5%")};
   position: fixed;
   z-index:99;
   @media (min-width: 300px) and (max-width: 980px) {
     position: fixed;
-    background-color: ${props => (props.colorChange ? '#fff' : 'transparent')};
+    background-color: ${props => (props.colorChange ? '#000' : 'transparent')};
     
   }
   
@@ -71,7 +71,7 @@ export const NavbarLi = styled(Link).attrs(props => ({
   
   text-transform:uppercase;
   text-decoration:none;
-  color: ${props => (props.colorChange ? '#000' : "#fff")};
+  color: ${props => (props.colorChange ? '#fff' : "#fff")};
   
   &:hover {
     color: #EE9A14;
