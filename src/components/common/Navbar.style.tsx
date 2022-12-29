@@ -104,6 +104,7 @@ export const NavbarLi = styled(Link).attrs(props => ({
   }
   &.active {
     color: #EE9A14;
+    font-size:25px
     
   }
 
