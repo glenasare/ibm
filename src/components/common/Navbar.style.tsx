@@ -31,7 +31,7 @@ export const NavbarUl = styled.ul<NavbarMain>`
   justify-content: space-around;
   display: flex;
   padding-right: 20px;
-  padding-top: ${props => (props.colorChange ? '3%' : "3%")};
+  padding-top: ${props => (props.colorChange ? '0%' : "3%")};
 
 
     /* Styles for viewports wider than 500px
@@ -47,6 +47,30 @@ export const NavbarUl = styled.ul<NavbarMain>`
 
   
 `;
+export const NavbarSocialUl = styled.ul<NavbarMain>`
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+  justify-content: space-around;
+  display: flex;
+  padding-right: 20px;
+  padding-top: ${props => (props.colorChange ? '1.7%' : "1.7%")};
+
+
+    /* Styles for viewports wider than 500px
+  @media (min-width: 500px) {
+    display: none;
+  } */
+
+  /* Styles for viewports between 300px and 500px */
+  @media (min-width: 300px) and (max-width: 1000px) {
+    display: none;
+  }
+
+
+  
+`;
+
 export const NavLogo = styled.span <NavbarMain>`
   font-family: 'Caramel', cursive;
   color: ${props => (props.colorChange ? '#000' : "#000")};

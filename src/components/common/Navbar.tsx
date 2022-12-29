@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { NavbarLi, NavbarMain, NavbarUl, NavLogo } from "./Navbar.style";
+import { NavbarLi, NavbarMain, NavbarSocialUl, NavbarUl, NavLogo } from "./Navbar.style";
 
 import { BsSearch } from "react-icons/bs";
 
@@ -122,7 +122,7 @@ function Navbar() {
           ))}
         </div>
         {navbarSocials.map((items: any, index: any) => (
-          <NavbarUl key={index} colorChange={colorChange}>
+          <NavbarSocialUl key={index} colorChange={colorChange}>
             <NavbarLi
               colorChange={colorChange}
               to={items.to}
@@ -132,7 +132,7 @@ function Navbar() {
               {items.icon}
             </NavbarLi>
             <li>{items.image}</li>
-          </NavbarUl>
+          </NavbarSocialUl>
         ))}
 
         <HamburgerMenu colorChange={colorChange} />
